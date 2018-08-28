@@ -47,62 +47,9 @@ public class GaussJordanSolver {
      */
     public double[] Solve(){
 
+        // Your code here.
         
-        // Gauss upper-right matrix creation
-        
-        // Iterate over all rows
-        for (int rr=0; rr<n; ++rr) {
-        
-            // find the right pivoting row
-            if (bigA[rr][rr] == 0){
-                
-                // need to switch with a row that does not have 0 there
-                int r0 = rr;
-                while (r0<n && bigA[r0][rr] ==0 ) ++r0;
-                
-                // check if we did NOT find a row to pivot on 
-                if (r0==n)
-                    return null;
-                
-                // If we found good one to serve as pivot, switch the rows.
-                // will do it direct, rather than clone, as clone is 1D by nature.
-                for (int ii=rr; ii<n+1; ++ii){
-                    double tmp = bigA[rr][ii];
-                    bigA[rr][ii] = bigA[r0][ii];
-                    bigA[r0][ii] = tmp;
-                }
-            }
-            
-            // Normalize this one line
-            double scale = bigA[rr][rr];   // it cannot be 0 here
-            for (int cc=rr; cc<n+1 ; ++cc)
-                bigA[rr][cc] /= scale;
-            
-            // Zero all the remaining lines
-            // This is one of the two differences here for the Jordan one:
-            // you do it for ALL the lines
-            for (int rs=0 ; rs<n ; ++rs) {
-                if (rs != rr) {
-                    scale = bigA[rs][rr];
-                    for (int cc=rr; cc<n+1 ; ++cc)
-                        bigA[rs][cc] -= scale*bigA[rr][cc];
-                }
-            }
-            
-        }
-
-        //  Here, the matrix should look ok!
-
-        
-        // back substituting (= solving)
-        // The second difference: No need to back substitute.
-        // It is simply the value!
-        double[] x = new double[n];
-        
-        for (int rr=n-1 ; rr >=0 ; --rr) 
-            x[rr] = bigA[rr][n];
-        
-        return x;
+       return null;
     }
     
         
