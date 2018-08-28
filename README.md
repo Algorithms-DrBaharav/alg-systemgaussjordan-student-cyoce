@@ -10,8 +10,8 @@ which is the unit matrix (only ones along the diagonal).
 corresponding element in the solution vector.
 
 What you need to do here:
-a. Modify our Gauss algorithm to be Gauss-Jordan
-b. Add a 4x4 test case: You need to construct a set of 4 equations with 4 unknowns. 
+a. Modify our Gauss algorithm to be Gauss-Jordan  : See the solve() function, where you have //your code here
+b. Add a 4x4 test case: You need to construct a set of 4 equations with 4 unknowns.  // In the test file
  
 In general:
 * Gauss elimination - creates an upper-right matrix, and solves by substitution from the bottom.
