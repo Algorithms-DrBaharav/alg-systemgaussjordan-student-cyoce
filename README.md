@@ -15,6 +15,7 @@ a. Modify our Gauss algorithm to be Gauss-Jordan  : See the solve() function, wh
 
 b. Add a 5x5 test case: You need to construct a set of 5 equations with 5 unknowns.  // In the test file
  
+
 In general:
 * Gauss elimination - creates an upper-right matrix, and solves by substitution from the bottom.
 * Gauss-Jordan - Creates a unit matrix, and the values are given (no need to solve). 
