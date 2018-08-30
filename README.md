@@ -13,7 +13,7 @@ What you need to do here:
 
 a. Modify our Gauss algorithm to be Gauss-Jordan  : See the solve() function, where you have //your code here
 
-b. Add a 6x6 test case: You need to construct a set of 6 equations with 6 unknowns.  // In the test file
+b. Add a 5x5 test case: You need to construct a set of 5 equations with 5 unknowns.  // In the test file
  
 In general:
 * Gauss elimination - creates an upper-right matrix, and solves by substitution from the bottom.
